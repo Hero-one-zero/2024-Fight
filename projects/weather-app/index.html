@@ -1,0 +1,15 @@
+
+   <!DOCTYPE html>
+   <html>
+   <head>
+       <title>郑州天气助手</title>
+   </head>
+   <body>
+       <h1>实时天气加载中...</h1>
+       <script>
+           fetch('https://api.weather.com/...')
+               .then(response => response.json())
+               .then(data => document.body.innerHTML = `温度: ${data.temp}℃`);
+       </script>
+   </body>
+   </html>
