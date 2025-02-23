@@ -6,8 +6,8 @@
    ![LeetCode](https://img.shields.io/badge/LeetCode-已刷题数-blue)
    ## LeetCode 战绩
 
-![主徽章](https://raw.githubusercontent.com/Hero-one-zero/2024-Fight/main/assets/leetcode-main.svg)
-![副徽章](https://raw.githubusercontent.com/Hero-one-zero/2024-Fight/main/assets/leetcode-secondary.svg)
+   ![主徽章](https://raw.githubusercontent.com/Hero-one-zero/2024-Fight/main/assets/leetcode_main.svg)
+   ![副徽章](https://raw.githubusercontent.com/Hero-one-zero/2024-Fight/main/assets/leetcode_secondary.svg)
    ## 🛠️ 本周战报
    - [x] 创建逆袭仓库
    - [ ] 完成天气助手项目
