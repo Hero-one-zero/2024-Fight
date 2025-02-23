@@ -20,7 +20,7 @@ jobs:
           theme: "dark"
           site: "cn" # 中文站
           animation: true
-          output: "assets/leetcode-main.svg"
+          output: "assets/leetcode_main.svg"
 
       # 生成副徽章（周赛排名+题型分布）
       - name: Generate Secondary Badge
@@ -34,5 +34,5 @@ jobs:
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
-          add: ["assets/leetcode-*.svg"]
+          add: "assets/leetcode-*.svg"
           message: "Update LeetCode badges"
