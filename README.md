@@ -1,8 +1,7 @@
 # 2024-Fight
 # 🚀 2024逆袭作战室
    [![LeetCode](https://img.shields.io/badge/LeetCode-已刷{{1}}题-橙色?logo=leetcode)](https://leetcode.cn/u/RfS9Ew2ZbA/)
-   ![LeetCode Stats](https://leetcode-stats-six.vercel.app/api?username=RfS9Ew2ZbA)
-   
+   ![LeetCode](https://leetcard.jacoblin.cool/RfS9Ew2ZbAtheme=light&font=Roboto&site=cn)
    ![Progress](https://progress-bar.dev/10/?title=HTML掌握度)
    ![LeetCode](https://img.shields.io/badge/LeetCode-已刷题数-blue)
 
