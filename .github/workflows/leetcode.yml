@@ -1,0 +1,38 @@
+name: LeetCode Dual Badges
+on:
+  schedule:
+    - cron: '0 3 * * *' # 每天北京时间11点更新
+  workflow_dispatch:
+
+jobs:
+  generate-badges:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # 生成主徽章（总题数+通过率）
+      - name: Generate Main Badge
+        uses: jeasonstudio/leetcode-badge@v1.1.0
+        with:
+          username: ${{ secrets.LEETCODE_USERNAME }}
+          password: ${{ secrets.LEETCODE_PASSWORD }}
+          theme: "dark"
+          site: "cn" # 中文站
+          animation: true
+          output: "assets/leetcode-main.svg"
+
+      # 生成副徽章（周赛排名+题型分布）
+      - name: Generate Secondary Badge
+        uses: johanstudio/leetcode-stats@v2
+        with:
+          username: ${{ secrets.LEETCODE_USERNAME }}
+          show_rank: true
+          show_tags: true
+          output: "assets/leetcode-secondary.svg"
+
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: ["assets/leetcode-*.svg"]
+          message: "Update LeetCode badges"
